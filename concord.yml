@@ -18,6 +18,3 @@ flows:
          return x,y
          
      x, y = Read_Two_Column_File('input.txt')
-
-     print x
-     print y
