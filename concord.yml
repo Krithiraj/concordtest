@@ -9,7 +9,7 @@ flows:
      def Read_Two_Column_File(file_name):
          with open(file_name, 'r') as data:
              for line in data:
-                 x = line.split(":")
+                 x, y = line.split(":")
                  z = int(x) + int(y)
                  print x
                  print y
