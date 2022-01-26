@@ -6,12 +6,12 @@ flows:
   default:
   - script: python
     body: |
-     def Read_Two_Column_File(file_name):
+      def Read_Two_Column_File(file_name):
          with open(file_name, 'r') as data:
              for line in data:
-                 x, y = line.split(":")|
+                 x, y = line.split(":")
                  print x
                  print y
                  
          return x,y
-     x, y = Read_Two_Column_File('input.txt')
+      x, y = Read_Two_Column_File('input.txt')
