@@ -1,4 +1,2 @@
-krithi:rajkumar
-mithran:rudhran
-kalai:mohan
-malathi:rajendran
+3:5
+4:8
