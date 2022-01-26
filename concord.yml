@@ -14,8 +14,6 @@ flows:
                  p = line.split(":")
                  x.append(int(p[0]))
                  y.append(int(p[1]))
-         
-     Read_Two_Column_File('input.txt')
-     
      print x
      print y
+     x, y = Read_Two_Column_File('input.txt')
