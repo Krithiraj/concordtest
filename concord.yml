@@ -8,13 +8,10 @@ flows:
     body: |
      def Read_Two_Column_File(file_name):
          with open(file_name, 'r') as data:
-             x = None
-             y = None
              for line in data:
-                 p = line.split(":")
-                 x.append(p(0))
-                 y.append(p(1))
+                 x, y = line.split(":")
                
          return x,y
      x, y = Read_Two_Column_File('input.txt')
      print x
+     print y
