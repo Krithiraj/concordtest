@@ -1,13 +1,8 @@
-configuration:
-  arguments:
-    formNameVar: "myForm"
-
 flows:
   default:
-  - form: ${formNameVar}
-  - log: "Hello, ${myForm.name}"
-  - log: "Hello, ${context.getVariable(formNameVar).name}"
+  - ${myTask.sayHello("world")}         # short form
 
-forms:
-  myForm:
-    - name: { type: "string" }
+  - expr: ${myTask.sum(1, 2)}           # full form
+    out: mySum
+    error:
+    - log: "Wham! ${lastError.message}"
