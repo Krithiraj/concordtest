@@ -14,5 +14,4 @@ flows:
                  print x
                  print y
                  print z
-         return x,y
      x, y = Read_Two_Column_File('input.txt')
