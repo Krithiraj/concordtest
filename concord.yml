@@ -21,6 +21,3 @@ flows:
 
      print x
      print y
-
-  - log: ${x}
-  - log: ${y
