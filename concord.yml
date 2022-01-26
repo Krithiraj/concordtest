@@ -15,8 +15,8 @@ flows:
                  x.append(int(p[0]))
                  y.append(int(p[1]))
 
-         return x, y
-
+         return x
+         return y
      x, y = Read_Two_Column_File('input.txt')
 
      execution.setVariable("name", x)
