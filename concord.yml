@@ -13,11 +13,9 @@ flows:
                  print x
                  print y
                  
-         return x,y 
+         return x,y
+     x, y = Read_Two_Column_File('input.txt')
   - script : python
     body: |
      z = int(x) + int(y)
      print z
-     
-     
-     x, y = Read_Two_Column_File('input.txt')
