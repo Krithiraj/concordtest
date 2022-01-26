@@ -15,12 +15,12 @@ flows:
                  x.append(int(p[0]))
                  y.append(int(p[1]))
 
-         return x
-         return y
+         return x,y
+         
      x, y = Read_Two_Column_File('input.txt')
 
-     execution.setVariable("name", x)
-     execution.setVariable("result", y)
+     print x
+     print y
 
   - log: ${name}
   - log: ${result}
