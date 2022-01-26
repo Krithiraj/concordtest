@@ -10,12 +10,9 @@ flows:
          with open(file_name, 'r') as data:
              for line in data:
                  x, y = line.split(":")
-                 print x
-                 print y
-                 
+                 x.add()
+                 y.add()
+             print x
+             print y
          return x,y
       x, y = Read_Two_Column_File('input.txt')
-  - script: python
-    body: |
-      z = x + y
-      print z
