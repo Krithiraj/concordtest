@@ -1,11 +1,13 @@
 configuration:
   arguments:
-    name: "Example"
-    coordinates:
-      x: 10
-      y: 5
-      z: 0
+    formNameVar: "myForm"
+
 flows:
   default:
-    - log: "Project name: ${name}"
-    - log: "Coordinates (x,y,z): ${coordinates.x}, ${coordinates.y}, ${coordinates.z}"
+  - form: ${formNameVar}
+  - log: "Hello, ${myForm.name}"
+  - log: "Hello, ${context.getVariable(formNameVar).name}"
+
+forms:
+  myForm:
+    - name: { type: "string" }
