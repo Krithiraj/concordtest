@@ -22,5 +22,5 @@ flows:
      print x
      print y
 
-  - log: ${name}
-  - log: ${result}
+  - log: ${x}
+  - log: ${y
