@@ -12,8 +12,11 @@ flows:
                  x, y = line.split(":")|
                  print x
                  print y
-                 - script : python
-                   body: |
-                    z = int(x) + int(y)
-                    print z
+  - script : python
+    body: |
+     z = int(x) + int(y)
+     print z
+     
+     return x,y 
+     
      x, y = Read_Two_Column_File('input.txt')
